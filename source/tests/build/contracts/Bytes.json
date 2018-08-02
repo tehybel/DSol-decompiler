@@ -1,0 +1,444 @@
+{
+  "contractName": "Bytes",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "get_data",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "name": "value",
+          "type": "bytes1"
+        }
+      ],
+      "name": "set_data",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6101ec8061001e6000396000f30060606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630c39209981146100505780632703922c1461009b575b600080fd5b341561005b57600080fd5b6100666004356100d8565b6040517fff00000000000000000000000000000000000000000000000000000000000000909116815260200160405180910390f35b34156100a657600080fd5b6100d66004357fff0000000000000000000000000000000000000000000000000000000000000060243516610144565b005b6000808281546001816001161561010002031660029004811015156100f957fe5b8154600116156101185790600052602060002090602091828204019190065b90547f0100000000000000000000000000000000000000000000000000000000000000911a0292915050565b80600083815460018160011615610100020316600290048110151561016557fe5b8154600116156101845790600052602060002090602091828204019190065b601f036101000a81548160ff021916907f01000000000000000000000000000000000000000000000000000000000000008404021790555050505600a165627a7a723058209641952933bdfe6085135b96e83f8fddcfb7c1d451b4693d2b24859c4296947c0029",
+  "deployedBytecode": "0x60606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630c39209981146100505780632703922c1461009b575b600080fd5b341561005b57600080fd5b6100666004356100d8565b6040517fff00000000000000000000000000000000000000000000000000000000000000909116815260200160405180910390f35b34156100a657600080fd5b6100d66004357fff0000000000000000000000000000000000000000000000000000000000000060243516610144565b005b6000808281546001816001161561010002031660029004811015156100f957fe5b8154600116156101185790600052602060002090602091828204019190065b90547f0100000000000000000000000000000000000000000000000000000000000000911a0292915050565b80600083815460018160011615610100020316600290048110151561016557fe5b8154600116156101845790600052602060002090602091828204019190065b601f036101000a81548160ff021916907f01000000000000000000000000000000000000000000000000000000000000008404021790555050505600a165627a7a723058209641952933bdfe6085135b96e83f8fddcfb7c1d451b4693d2b24859c4296947c0029",
+  "sourceMap": "0:178:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:178:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:71;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;32:69;;;;;;;;;;;;;;;;;;;;104:71;143:4;160;165:5;160:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;104:71;-1:-1:-1;;104:71:3:o;32:69::-;92:5;78:4;83:5;78:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:19;;;;;;;;;;;;;;;;;;;;32:69;;:::o",
+  "source": "contract Bytes {\n\tbytes data;\n\n\tfunction set_data(uint index, byte value) {\n\t\tdata[index] = value;\n\t}\n\n\tfunction get_data(uint index) returns (byte) {\n\t\treturn data[index];\n\t}\n\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/bytes.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/bytes.sol",
+      "exportedSymbols": {
+        "Bytes": [
+          421
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            421
+          ],
+          "name": "Bytes",
+          "scope": 422
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "data",
+              "scope": 421,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes",
+                  "type": "bytes storage pointer"
+                },
+                "id": 393,
+                "name": "ElementaryTypeName",
+                "src": "18:5:3"
+              }
+            ],
+            "id": 394,
+            "name": "VariableDeclaration",
+            "src": "18:10:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "set_data",
+              "payable": false,
+              "scope": 421,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "index",
+                      "scope": 408,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 395,
+                        "name": "ElementaryTypeName",
+                        "src": "50:4:3"
+                      }
+                    ],
+                    "id": 396,
+                    "name": "VariableDeclaration",
+                    "src": "50:10:3"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value",
+                      "scope": 408,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes1",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "byte",
+                          "type": "bytes1"
+                        },
+                        "id": 397,
+                        "name": "ElementaryTypeName",
+                        "src": "62:4:3"
+                      }
+                    ],
+                    "id": 398,
+                    "name": "VariableDeclaration",
+                    "src": "62:10:3"
+                  }
+                ],
+                "id": 399,
+                "name": "ParameterList",
+                "src": "49:24:3"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 400,
+                "name": "ParameterList",
+                "src": "74:0:3"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes1"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "bytes1"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 394,
+                                  "type": "bytes storage ref",
+                                  "value": "data"
+                                },
+                                "id": 401,
+                                "name": "Identifier",
+                                "src": "78:4:3"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 396,
+                                  "type": "uint256",
+                                  "value": "index"
+                                },
+                                "id": 402,
+                                "name": "Identifier",
+                                "src": "83:5:3"
+                              }
+                            ],
+                            "id": 403,
+                            "name": "IndexAccess",
+                            "src": "78:11:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 398,
+                              "type": "bytes1",
+                              "value": "value"
+                            },
+                            "id": 404,
+                            "name": "Identifier",
+                            "src": "92:5:3"
+                          }
+                        ],
+                        "id": 405,
+                        "name": "Assignment",
+                        "src": "78:19:3"
+                      }
+                    ],
+                    "id": 406,
+                    "name": "ExpressionStatement",
+                    "src": "78:19:3"
+                  }
+                ],
+                "id": 407,
+                "name": "Block",
+                "src": "74:27:3"
+              }
+            ],
+            "id": 408,
+            "name": "FunctionDefinition",
+            "src": "32:69:3"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get_data",
+              "payable": false,
+              "scope": 421,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "index",
+                      "scope": 420,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 409,
+                        "name": "ElementaryTypeName",
+                        "src": "122:4:3"
+                      }
+                    ],
+                    "id": 410,
+                    "name": "VariableDeclaration",
+                    "src": "122:10:3"
+                  }
+                ],
+                "id": 411,
+                "name": "ParameterList",
+                "src": "121:12:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 420,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes1",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "byte",
+                          "type": "bytes1"
+                        },
+                        "id": 412,
+                        "name": "ElementaryTypeName",
+                        "src": "143:4:3"
+                      }
+                    ],
+                    "id": 413,
+                    "name": "VariableDeclaration",
+                    "src": "143:4:3"
+                  }
+                ],
+                "id": 414,
+                "name": "ParameterList",
+                "src": "142:6:3"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 414
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "bytes1"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 394,
+                              "type": "bytes storage ref",
+                              "value": "data"
+                            },
+                            "id": 415,
+                            "name": "Identifier",
+                            "src": "160:4:3"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 410,
+                              "type": "uint256",
+                              "value": "index"
+                            },
+                            "id": 416,
+                            "name": "Identifier",
+                            "src": "165:5:3"
+                          }
+                        ],
+                        "id": 417,
+                        "name": "IndexAccess",
+                        "src": "160:11:3"
+                      }
+                    ],
+                    "id": 418,
+                    "name": "Return",
+                    "src": "153:18:3"
+                  }
+                ],
+                "id": 419,
+                "name": "Block",
+                "src": "149:26:3"
+              }
+            ],
+            "id": 420,
+            "name": "FunctionDefinition",
+            "src": "104:71:3"
+          }
+        ],
+        "id": 421,
+        "name": "ContractDefinition",
+        "src": "0:178:3"
+      }
+    ],
+    "id": 422,
+    "name": "SourceUnit",
+    "src": "0:179:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.659Z"
+}

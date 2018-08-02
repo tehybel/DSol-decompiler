@@ -1,0 +1,764 @@
+{
+  "contractName": "SmallExample",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "myfunc",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60db8061001d6000396000f300606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663acc9d5d681146043575b600080fd5b3415604d57600080fd5b60566004356068565b60405190815260200160405180910390f35b6000808060028406600114156081576001820191506088565b6002820191505b5060005b8381101560a15760029190910190600101608c565b5060039004600501929150505600a165627a7a723058208463eb00770034296b7ef4643451d56dceb2323d346540025e4d14069220c6880029",
+  "deployedBytecode": "0x606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663acc9d5d681146043575b600080fd5b3415604d57600080fd5b60566004356068565b60405190815260200160405180910390f35b6000808060028406600114156081576001820191506088565b6002820191505b5060005b8381101560a15760029190910190600101608c565b5060039004600501929150505600a165627a7a723058208463eb00770034296b7ef4643451d56dceb2323d346540025e4d14069220c6880029",
+  "sourceMap": "0:251:22:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:251:22:-;;;;;;;;;;;;;;;;;;;;;;;26:222;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;69:4;;;108:1;104;:5;114:1;103:12;99:68;;;132:1;122:11;;;;99:68;;;161:1;151:11;;;;99:68;-1:-1:-1;185:1:22;171:50;192:1;188;:5;171:50;;;215:1;205:11;;;;;195:3;;171:50;;;-1:-1:-1;239:1:22;232:8;;243:1;232:12;;;-1:-1:-1;;26:222:22:o",
+  "source": "contract SmallExample {\n\n\tfunction myfunc (uint x) external returns (uint) {\n\t\tuint result = 0;\n\n\t\tif ((x % 2) == 1) {\n\t\t\tresult += 1;\n\t\t}\n\t\telse {\n\t\t\tresult += 2;\n\t\t}\n\n\t\tfor (uint i = 0; i < x; i++) {\n\t\t\tresult += 2;\n\t\t}\n\n\t\treturn result/3 + 5;\n\t}\n\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/smallexample.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/smallexample.sol",
+      "exportedSymbols": {
+        "SmallExample": [
+          3997
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3997
+          ],
+          "name": "SmallExample",
+          "scope": 3998
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "myfunc",
+              "payable": false,
+              "scope": 3997,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 3996,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3946,
+                        "name": "ElementaryTypeName",
+                        "src": "43:4:22"
+                      }
+                    ],
+                    "id": 3947,
+                    "name": "VariableDeclaration",
+                    "src": "43:6:22"
+                  }
+                ],
+                "id": 3948,
+                "name": "ParameterList",
+                "src": "42:8:22"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 3996,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3949,
+                        "name": "ElementaryTypeName",
+                        "src": "69:4:22"
+                      }
+                    ],
+                    "id": 3950,
+                    "name": "VariableDeclaration",
+                    "src": "69:4:22"
+                  }
+                ],
+                "id": 3951,
+                "name": "ParameterList",
+                "src": "68:6:22"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        3953
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "result",
+                          "scope": 3996,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 3952,
+                            "name": "ElementaryTypeName",
+                            "src": "79:4:22"
+                          }
+                        ],
+                        "id": 3953,
+                        "name": "VariableDeclaration",
+                        "src": "79:11:22"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "30",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 0",
+                          "value": "0"
+                        },
+                        "id": 3954,
+                        "name": "Literal",
+                        "src": "93:1:22"
+                      }
+                    ],
+                    "id": 3955,
+                    "name": "VariableDeclarationStatement",
+                    "src": "79:15:22"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isInlineArray": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "%",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3947,
+                                      "type": "uint256",
+                                      "value": "x"
+                                    },
+                                    "id": 3956,
+                                    "name": "Identifier",
+                                    "src": "104:1:22"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "32",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 2",
+                                      "value": "2"
+                                    },
+                                    "id": 3957,
+                                    "name": "Literal",
+                                    "src": "108:1:22"
+                                  }
+                                ],
+                                "id": 3958,
+                                "name": "BinaryOperation",
+                                "src": "104:5:22"
+                              }
+                            ],
+                            "id": 3959,
+                            "name": "TupleExpression",
+                            "src": "103:7:22"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 3960,
+                            "name": "Literal",
+                            "src": "114:1:22"
+                          }
+                        ],
+                        "id": 3961,
+                        "name": "BinaryOperation",
+                        "src": "103:12:22"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "+=",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3953,
+                                      "type": "uint256",
+                                      "value": "result"
+                                    },
+                                    "id": 3962,
+                                    "name": "Identifier",
+                                    "src": "122:6:22"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "31",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 1",
+                                      "value": "1"
+                                    },
+                                    "id": 3963,
+                                    "name": "Literal",
+                                    "src": "132:1:22"
+                                  }
+                                ],
+                                "id": 3964,
+                                "name": "Assignment",
+                                "src": "122:11:22"
+                              }
+                            ],
+                            "id": 3965,
+                            "name": "ExpressionStatement",
+                            "src": "122:11:22"
+                          }
+                        ],
+                        "id": 3966,
+                        "name": "Block",
+                        "src": "117:21:22"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "+=",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3953,
+                                      "type": "uint256",
+                                      "value": "result"
+                                    },
+                                    "id": 3967,
+                                    "name": "Identifier",
+                                    "src": "151:6:22"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "32",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 2",
+                                      "value": "2"
+                                    },
+                                    "id": 3968,
+                                    "name": "Literal",
+                                    "src": "161:1:22"
+                                  }
+                                ],
+                                "id": 3969,
+                                "name": "Assignment",
+                                "src": "151:11:22"
+                              }
+                            ],
+                            "id": 3970,
+                            "name": "ExpressionStatement",
+                            "src": "151:11:22"
+                          }
+                        ],
+                        "id": 3971,
+                        "name": "Block",
+                        "src": "146:21:22"
+                      }
+                    ],
+                    "id": 3972,
+                    "name": "IfStatement",
+                    "src": "99:68:22"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "assignments": [
+                            3974
+                          ]
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "i",
+                              "scope": 3996,
+                              "stateVariable": false,
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "value": null,
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint",
+                                  "type": "uint256"
+                                },
+                                "id": 3973,
+                                "name": "ElementaryTypeName",
+                                "src": "176:4:22"
+                              }
+                            ],
+                            "id": 3974,
+                            "name": "VariableDeclaration",
+                            "src": "176:6:22"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 3975,
+                            "name": "Literal",
+                            "src": "185:1:22"
+                          }
+                        ],
+                        "id": 3976,
+                        "name": "VariableDeclarationStatement",
+                        "src": "176:10:22"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3974,
+                              "type": "uint256",
+                              "value": "i"
+                            },
+                            "id": 3977,
+                            "name": "Identifier",
+                            "src": "188:1:22"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3947,
+                              "type": "uint256",
+                              "value": "x"
+                            },
+                            "id": 3978,
+                            "name": "Identifier",
+                            "src": "192:1:22"
+                          }
+                        ],
+                        "id": 3979,
+                        "name": "BinaryOperation",
+                        "src": "188:5:22"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3974,
+                                  "type": "uint256",
+                                  "value": "i"
+                                },
+                                "id": 3980,
+                                "name": "Identifier",
+                                "src": "195:1:22"
+                              }
+                            ],
+                            "id": 3981,
+                            "name": "UnaryOperation",
+                            "src": "195:3:22"
+                          }
+                        ],
+                        "id": 3982,
+                        "name": "ExpressionStatement",
+                        "src": "195:3:22"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "+=",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 3953,
+                                      "type": "uint256",
+                                      "value": "result"
+                                    },
+                                    "id": 3983,
+                                    "name": "Identifier",
+                                    "src": "205:6:22"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "32",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 2",
+                                      "value": "2"
+                                    },
+                                    "id": 3984,
+                                    "name": "Literal",
+                                    "src": "215:1:22"
+                                  }
+                                ],
+                                "id": 3985,
+                                "name": "Assignment",
+                                "src": "205:11:22"
+                              }
+                            ],
+                            "id": 3986,
+                            "name": "ExpressionStatement",
+                            "src": "205:11:22"
+                          }
+                        ],
+                        "id": 3987,
+                        "name": "Block",
+                        "src": "200:21:22"
+                      }
+                    ],
+                    "id": 3988,
+                    "name": "ForStatement",
+                    "src": "171:50:22"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 3951
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "/",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3953,
+                                  "type": "uint256",
+                                  "value": "result"
+                                },
+                                "id": 3989,
+                                "name": "Identifier",
+                                "src": "232:6:22"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "33",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 3",
+                                  "value": "3"
+                                },
+                                "id": 3990,
+                                "name": "Literal",
+                                "src": "239:1:22"
+                              }
+                            ],
+                            "id": 3991,
+                            "name": "BinaryOperation",
+                            "src": "232:8:22"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "35",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 5",
+                              "value": "5"
+                            },
+                            "id": 3992,
+                            "name": "Literal",
+                            "src": "243:1:22"
+                          }
+                        ],
+                        "id": 3993,
+                        "name": "BinaryOperation",
+                        "src": "232:12:22"
+                      }
+                    ],
+                    "id": 3994,
+                    "name": "Return",
+                    "src": "225:19:22"
+                  }
+                ],
+                "id": 3995,
+                "name": "Block",
+                "src": "75:173:22"
+              }
+            ],
+            "id": 3996,
+            "name": "FunctionDefinition",
+            "src": "26:222:22"
+          }
+        ],
+        "id": 3997,
+        "name": "ContractDefinition",
+        "src": "0:251:22"
+      }
+    ],
+    "id": 3998,
+    "name": "SourceUnit",
+    "src": "0:252:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.669Z"
+}

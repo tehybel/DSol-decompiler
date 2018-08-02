@@ -1,0 +1,281 @@
+{
+  "contractName": "GT",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "f",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60ad8061001d6000396000f300606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b3de648b81146043575b600080fd5b3415604d57600080fd5b60566004356068565b60405190815260200160405180910390f35b60006011821115607957506044607c565b50805b9190505600a165627a7a72305820f9766d4fe414108eb4f6abda8c62f6670fddc8e2f8424c8afab9b2f48de72f230029",
+  "deployedBytecode": "0x606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b3de648b81146043575b600080fd5b3415604d57600080fd5b60566004356068565b60405190815260200160405180910390f35b60006011821115607957506044607c565b50805b9190505600a165627a7a72305820f9766d4fe414108eb4f6abda8c62f6670fddc8e2f8424c8afab9b2f48de72f230029",
+  "sourceMap": "0:109:7:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:109:7:-;;;;;;;;;;;;;;;;;;;;;;;15:92;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;53:4;71;67:1;:8;63:28;;;-1:-1:-1;87:4:7;80:11;;63:28;-1:-1:-1;102:1:7;15:92;;;;:::o",
+  "source": "contract GT {\n\tfunction f (uint x) external returns (uint) {\n\t\tif (x > 0x11)\n\t\t\treturn 0x44;\n\t\treturn x;\n\t}\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/gt.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/gt.sol",
+      "exportedSymbols": {
+        "GT": [
+          1841
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1841
+          ],
+          "name": "GT",
+          "scope": 1842
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "f",
+              "payable": false,
+              "scope": 1841,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 1840,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 1825,
+                        "name": "ElementaryTypeName",
+                        "src": "27:4:7"
+                      }
+                    ],
+                    "id": 1826,
+                    "name": "VariableDeclaration",
+                    "src": "27:6:7"
+                  }
+                ],
+                "id": 1827,
+                "name": "ParameterList",
+                "src": "26:8:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 1840,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 1828,
+                        "name": "ElementaryTypeName",
+                        "src": "53:4:7"
+                      }
+                    ],
+                    "id": 1829,
+                    "name": "VariableDeclaration",
+                    "src": "53:4:7"
+                  }
+                ],
+                "id": 1830,
+                "name": "ParameterList",
+                "src": "52:6:7"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": ">",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1826,
+                              "type": "uint256",
+                              "value": "x"
+                            },
+                            "id": 1831,
+                            "name": "Identifier",
+                            "src": "67:1:7"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30783131",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 17",
+                              "value": "0x11"
+                            },
+                            "id": 1832,
+                            "name": "Literal",
+                            "src": "71:4:7"
+                          }
+                        ],
+                        "id": 1833,
+                        "name": "BinaryOperation",
+                        "src": "67:8:7"
+                      },
+                      {
+                        "attributes": {
+                          "functionReturnParameters": 1830
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30783434",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 68",
+                              "value": "0x44"
+                            },
+                            "id": 1834,
+                            "name": "Literal",
+                            "src": "87:4:7"
+                          }
+                        ],
+                        "id": 1835,
+                        "name": "Return",
+                        "src": "80:11:7"
+                      }
+                    ],
+                    "id": 1836,
+                    "name": "IfStatement",
+                    "src": "63:28:7"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 1830
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 1826,
+                          "type": "uint256",
+                          "value": "x"
+                        },
+                        "id": 1837,
+                        "name": "Identifier",
+                        "src": "102:1:7"
+                      }
+                    ],
+                    "id": 1838,
+                    "name": "Return",
+                    "src": "95:8:7"
+                  }
+                ],
+                "id": 1839,
+                "name": "Block",
+                "src": "59:48:7"
+              }
+            ],
+            "id": 1840,
+            "name": "FunctionDefinition",
+            "src": "15:92:7"
+          }
+        ],
+        "id": 1841,
+        "name": "ContractDefinition",
+        "src": "0:109:7"
+      }
+    ],
+    "id": 1842,
+    "name": "SourceUnit",
+    "src": "0:110:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.664Z"
+}

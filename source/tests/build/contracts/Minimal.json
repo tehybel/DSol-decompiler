@@ -1,0 +1,169 @@
+{
+  "contractName": "Minimal",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "foo",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b60978061001c6000396000f300606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c298557881146043575b600080fd5b3415604d57600080fd5b60536065565b60405190815260200160405180910390f35b610123905600a165627a7a72305820cbf696cd81b6191cd22a343202bf7c4cc1413f1765a326153ff13cefa9cd1b7a0029",
+  "deployedBytecode": "0x606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c298557881146043575b600080fd5b3415604d57600080fd5b60536065565b60405190815260200160405180910390f35b610123905600a165627a7a72305820cbf696cd81b6191cd22a343202bf7c4cc1413f1765a326153ff13cefa9cd1b7a0029",
+  "sourceMap": "0:83:12:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:83:12:-;;;;;;;;;;;;;;;;;;;;;;;21:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;71:5;21:59;:::o",
+  "source": "contract Minimal {\n\n\tfunction foo () external returns (int) {\n\t\treturn 0x123;\n\t}\n\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/minimal.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/minimal.sol",
+      "exportedSymbols": {
+        "Minimal": [
+          1999
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1999
+          ],
+          "name": "Minimal",
+          "scope": 2000
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "foo",
+              "payable": false,
+              "scope": 1999,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1991,
+                "name": "ParameterList",
+                "src": "34:2:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 1998,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int",
+                          "type": "int256"
+                        },
+                        "id": 1992,
+                        "name": "ElementaryTypeName",
+                        "src": "55:3:12"
+                      }
+                    ],
+                    "id": 1993,
+                    "name": "VariableDeclaration",
+                    "src": "55:3:12"
+                  }
+                ],
+                "id": 1994,
+                "name": "ParameterList",
+                "src": "54:5:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 1994
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "3078313233",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 291",
+                          "value": "0x123"
+                        },
+                        "id": 1995,
+                        "name": "Literal",
+                        "src": "71:5:12"
+                      }
+                    ],
+                    "id": 1996,
+                    "name": "Return",
+                    "src": "64:12:12"
+                  }
+                ],
+                "id": 1997,
+                "name": "Block",
+                "src": "60:20:12"
+              }
+            ],
+            "id": 1998,
+            "name": "FunctionDefinition",
+            "src": "21:59:12"
+          }
+        ],
+        "id": 1999,
+        "name": "ContractDefinition",
+        "src": "0:83:12"
+      }
+    ],
+    "id": 2000,
+    "name": "SourceUnit",
+    "src": "0:84:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.665Z"
+}

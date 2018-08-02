@@ -1,0 +1,327 @@
+{
+  "contractName": "Multiret",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "f",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60606040523415600e57600080fd5b60a78061001c6000396000f300606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b3de648b81146043575b600080fd5b3415604d57600080fd5b6056600435606e565b60405191825260208201526040908101905180910390f35b60118102602282029150915600a165627a7a7230582039f4fd6d95e537869b245bfae132a28aca9f059e7a04ad809ccf5ca913fea90d0029",
+  "deployedBytecode": "0x606060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b3de648b81146043575b600080fd5b3415604d57600080fd5b6056600435606e565b60405191825260208201526040908101905180910390f35b60118102602282029150915600a165627a7a7230582039f4fd6d95e537869b245bfae132a28aca9f059e7a04ad809ccf5ca913fea90d0029",
+  "sourceMap": "0:105:15:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:105:15:-;;;;;;;;;;;;;;;;;;;;;;;21:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;85:4;83:6;;93:4;91:6;;21:81;;;:::o",
+  "source": "contract Multiret {\n\tfunction f (uint x) external returns (uint, uint) {\n\t\treturn (x*0x11, x*0x22);\n\t}\n\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/multiret.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/multiret.sol",
+      "exportedSymbols": {
+        "Multiret": [
+          2141
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2141
+          ],
+          "name": "Multiret",
+          "scope": 2142
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "f",
+              "payable": false,
+              "scope": 2141,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 2140,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 2123,
+                        "name": "ElementaryTypeName",
+                        "src": "33:4:15"
+                      }
+                    ],
+                    "id": 2124,
+                    "name": "VariableDeclaration",
+                    "src": "33:6:15"
+                  }
+                ],
+                "id": 2125,
+                "name": "ParameterList",
+                "src": "32:8:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 2140,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 2126,
+                        "name": "ElementaryTypeName",
+                        "src": "59:4:15"
+                      }
+                    ],
+                    "id": 2127,
+                    "name": "VariableDeclaration",
+                    "src": "59:4:15"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 2140,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 2128,
+                        "name": "ElementaryTypeName",
+                        "src": "65:4:15"
+                      }
+                    ],
+                    "id": 2129,
+                    "name": "VariableDeclaration",
+                    "src": "65:4:15"
+                  }
+                ],
+                "id": 2130,
+                "name": "ParameterList",
+                "src": "58:12:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 2130
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(uint256,uint256)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "*",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2124,
+                                  "type": "uint256",
+                                  "value": "x"
+                                },
+                                "id": 2131,
+                                "name": "Identifier",
+                                "src": "83:1:15"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30783131",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 17",
+                                  "value": "0x11"
+                                },
+                                "id": 2132,
+                                "name": "Literal",
+                                "src": "85:4:15"
+                              }
+                            ],
+                            "id": 2133,
+                            "name": "BinaryOperation",
+                            "src": "83:6:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "*",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 2124,
+                                  "type": "uint256",
+                                  "value": "x"
+                                },
+                                "id": 2134,
+                                "name": "Identifier",
+                                "src": "91:1:15"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30783232",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 34",
+                                  "value": "0x22"
+                                },
+                                "id": 2135,
+                                "name": "Literal",
+                                "src": "93:4:15"
+                              }
+                            ],
+                            "id": 2136,
+                            "name": "BinaryOperation",
+                            "src": "91:6:15"
+                          }
+                        ],
+                        "id": 2137,
+                        "name": "TupleExpression",
+                        "src": "82:16:15"
+                      }
+                    ],
+                    "id": 2138,
+                    "name": "Return",
+                    "src": "75:23:15"
+                  }
+                ],
+                "id": 2139,
+                "name": "Block",
+                "src": "71:31:15"
+              }
+            ],
+            "id": 2140,
+            "name": "FunctionDefinition",
+            "src": "21:81:15"
+          }
+        ],
+        "id": 2141,
+        "name": "ContractDefinition",
+        "src": "0:105:15"
+      }
+    ],
+    "id": 2142,
+    "name": "SourceUnit",
+    "src": "0:106:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.665Z"
+}

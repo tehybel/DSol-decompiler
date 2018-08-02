@@ -1,0 +1,769 @@
+{
+  "contractName": "Struct",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "set_win",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        }
+      ],
+      "name": "set_age",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "set_addr",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "get_winner",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "age",
+              "type": "uint256"
+            },
+            {
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "name": "did_win",
+              "type": "bool"
+            },
+            {
+              "name": "is_old",
+              "type": "bool"
+            }
+          ],
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61024c8061001e6000396000f3006060604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663314d0375811461006657806367fdf9fa1461007b578063a2e3fcde14610091578063bb4c4f1c146100bd575b600080fd5b341561007157600080fd5b6100796100e2565b005b341561008657600080fd5b610079600435610123565b341561009c57600080fd5b61007973ffffffffffffffffffffffffffffffffffffffff60043516610128565b34156100c857600080fd5b6100d061016f565b60405190815260200160405180910390f35b600180547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff1674010000000000000000000000000000000000000000179055565b600055565b600180547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b6101776101f9565b6000608060405190810160409081528254825260019092015473ffffffffffffffffffffffffffffffffffffffff8116602083015260ff74010000000000000000000000000000000000000000820481161515938301939093527501000000000000000000000000000000000000000000900490911615156060820152905090565b608060405190810160409081526000808352602083018190529082018190526060820152905600a165627a7a723058200a67ea07156db3529453a0271a239b461feb8a40e92a63bffcc221c81a7501290029",
+  "deployedBytecode": "0x6060604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663314d0375811461006657806367fdf9fa1461007b578063a2e3fcde14610091578063bb4c4f1c146100bd575b600080fd5b341561007157600080fd5b6100796100e2565b005b341561008657600080fd5b610079600435610123565b341561009c57600080fd5b61007973ffffffffffffffffffffffffffffffffffffffff60043516610128565b34156100c857600080fd5b6100d061016f565b60405190815260200160405180910390f35b600180547fffffffffffffffffffffff00ffffffffffffffffffffffffffffffffffffffff1674010000000000000000000000000000000000000000179055565b600055565b600180547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b6101776101f9565b6000608060405190810160409081528254825260019092015473ffffffffffffffffffffffffffffffffffffffff8116602083015260ff74010000000000000000000000000000000000000000820481161515938301939093527501000000000000000000000000000000000000000000900490911615156060820152905090565b608060405190810160409081526000808352602083018190529082018190526060820152905600a165627a7a723058200a67ea07156db3529453a0271a239b461feb8a40e92a63bffcc221c81a7501290029",
+  "sourceMap": "0:352:27:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "0:352:27:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;230:52;;;;;;;;;;;;;;111:51;;;;;;;;;;;;;;165:62;;;;;;;;;;;;;;;;285:64;;;;;;;;;;;;;;;;;;;;;;;;;;;230:52;274:4;262:16;;;;;;;;230:52::o;111:51::-;149:1;:9;111:51::o;165:62::-;210:6;:13;;;;;;;;;;;;;;;165:62::o;285:64::-;325:6;;:::i;:::-;344:1;337:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;285:64:27;:::o;0:352::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "contract Struct {\n\tstruct winner {\n\t\tuint age;\n\t\taddress addr;\n\t\tbool did_win;\n\t\tbool is_old;\n\t}\n\n\twinner w;\n\n\tfunction set_age(uint a) external {\n\t\tw.age = a;\n\t}\n\n\tfunction set_addr(address addr) external {\n\t\tw.addr = addr;\n\t}\n\n\tfunction set_win() external {\n\t\tw.did_win = true;\n\t}\n\n\tfunction get_winner() external returns (winner) {\n\t\treturn w;\n\t}\n\n}\n",
+  "sourcePath": "/home/imm/datalogi/decompiler/source/tests/contracts/struct.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/imm/datalogi/decompiler/source/tests/contracts/struct.sol",
+      "exportedSymbols": {
+        "Struct": [
+          4273
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            4273
+          ],
+          "name": "Struct",
+          "scope": 4274
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Struct.winner",
+              "name": "winner",
+              "scope": 4273,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "age",
+                  "scope": 4228,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 4220,
+                    "name": "ElementaryTypeName",
+                    "src": "37:4:27"
+                  }
+                ],
+                "id": 4221,
+                "name": "VariableDeclaration",
+                "src": "37:8:27"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "addr",
+                  "scope": 4228,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 4222,
+                    "name": "ElementaryTypeName",
+                    "src": "49:7:27"
+                  }
+                ],
+                "id": 4223,
+                "name": "VariableDeclaration",
+                "src": "49:12:27"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "did_win",
+                  "scope": 4228,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 4224,
+                    "name": "ElementaryTypeName",
+                    "src": "65:4:27"
+                  }
+                ],
+                "id": 4225,
+                "name": "VariableDeclaration",
+                "src": "65:12:27"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "is_old",
+                  "scope": 4228,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 4226,
+                    "name": "ElementaryTypeName",
+                    "src": "81:4:27"
+                  }
+                ],
+                "id": 4227,
+                "name": "VariableDeclaration",
+                "src": "81:11:27"
+              }
+            ],
+            "id": 4228,
+            "name": "StructDefinition",
+            "src": "19:77:27"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "w",
+              "scope": 4273,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct Struct.winner storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "winner",
+                  "referencedDeclaration": 4228,
+                  "type": "struct Struct.winner storage pointer"
+                },
+                "id": 4229,
+                "name": "UserDefinedTypeName",
+                "src": "99:6:27"
+              }
+            ],
+            "id": 4230,
+            "name": "VariableDeclaration",
+            "src": "99:8:27"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "set_age",
+              "payable": false,
+              "scope": 4273,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "a",
+                      "scope": 4242,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 4231,
+                        "name": "ElementaryTypeName",
+                        "src": "128:4:27"
+                      }
+                    ],
+                    "id": 4232,
+                    "name": "VariableDeclaration",
+                    "src": "128:6:27"
+                  }
+                ],
+                "id": 4233,
+                "name": "ParameterList",
+                "src": "127:8:27"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4234,
+                "name": "ParameterList",
+                "src": "145:0:27"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "age",
+                              "referencedDeclaration": 4221,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4230,
+                                  "type": "struct Struct.winner storage ref",
+                                  "value": "w"
+                                },
+                                "id": 4235,
+                                "name": "Identifier",
+                                "src": "149:1:27"
+                              }
+                            ],
+                            "id": 4237,
+                            "name": "MemberAccess",
+                            "src": "149:5:27"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4232,
+                              "type": "uint256",
+                              "value": "a"
+                            },
+                            "id": 4238,
+                            "name": "Identifier",
+                            "src": "157:1:27"
+                          }
+                        ],
+                        "id": 4239,
+                        "name": "Assignment",
+                        "src": "149:9:27"
+                      }
+                    ],
+                    "id": 4240,
+                    "name": "ExpressionStatement",
+                    "src": "149:9:27"
+                  }
+                ],
+                "id": 4241,
+                "name": "Block",
+                "src": "145:17:27"
+              }
+            ],
+            "id": 4242,
+            "name": "FunctionDefinition",
+            "src": "111:51:27"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "set_addr",
+              "payable": false,
+              "scope": 4273,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "addr",
+                      "scope": 4254,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 4243,
+                        "name": "ElementaryTypeName",
+                        "src": "183:7:27"
+                      }
+                    ],
+                    "id": 4244,
+                    "name": "VariableDeclaration",
+                    "src": "183:12:27"
+                  }
+                ],
+                "id": 4245,
+                "name": "ParameterList",
+                "src": "182:14:27"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4246,
+                "name": "ParameterList",
+                "src": "206:0:27"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "addr",
+                              "referencedDeclaration": 4223,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4230,
+                                  "type": "struct Struct.winner storage ref",
+                                  "value": "w"
+                                },
+                                "id": 4247,
+                                "name": "Identifier",
+                                "src": "210:1:27"
+                              }
+                            ],
+                            "id": 4249,
+                            "name": "MemberAccess",
+                            "src": "210:6:27"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4244,
+                              "type": "address",
+                              "value": "addr"
+                            },
+                            "id": 4250,
+                            "name": "Identifier",
+                            "src": "219:4:27"
+                          }
+                        ],
+                        "id": 4251,
+                        "name": "Assignment",
+                        "src": "210:13:27"
+                      }
+                    ],
+                    "id": 4252,
+                    "name": "ExpressionStatement",
+                    "src": "210:13:27"
+                  }
+                ],
+                "id": 4253,
+                "name": "Block",
+                "src": "206:21:27"
+              }
+            ],
+            "id": 4254,
+            "name": "FunctionDefinition",
+            "src": "165:62:27"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "set_win",
+              "payable": false,
+              "scope": 4273,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4255,
+                "name": "ParameterList",
+                "src": "246:2:27"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4256,
+                "name": "ParameterList",
+                "src": "258:0:27"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "did_win",
+                              "referencedDeclaration": 4225,
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 4230,
+                                  "type": "struct Struct.winner storage ref",
+                                  "value": "w"
+                                },
+                                "id": 4257,
+                                "name": "Identifier",
+                                "src": "262:1:27"
+                              }
+                            ],
+                            "id": 4259,
+                            "name": "MemberAccess",
+                            "src": "262:9:27"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 4260,
+                            "name": "Literal",
+                            "src": "274:4:27"
+                          }
+                        ],
+                        "id": 4261,
+                        "name": "Assignment",
+                        "src": "262:16:27"
+                      }
+                    ],
+                    "id": 4262,
+                    "name": "ExpressionStatement",
+                    "src": "262:16:27"
+                  }
+                ],
+                "id": 4263,
+                "name": "Block",
+                "src": "258:24:27"
+              }
+            ],
+            "id": 4264,
+            "name": "FunctionDefinition",
+            "src": "230:52:27"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "get_winner",
+              "payable": false,
+              "scope": 4273,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4265,
+                "name": "ParameterList",
+                "src": "304:2:27"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 4272,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "struct Struct.winner memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "winner",
+                          "referencedDeclaration": 4228,
+                          "type": "struct Struct.winner storage pointer"
+                        },
+                        "id": 4266,
+                        "name": "UserDefinedTypeName",
+                        "src": "325:6:27"
+                      }
+                    ],
+                    "id": 4267,
+                    "name": "VariableDeclaration",
+                    "src": "325:6:27"
+                  }
+                ],
+                "id": 4268,
+                "name": "ParameterList",
+                "src": "324:8:27"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 4268
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4230,
+                          "type": "struct Struct.winner storage ref",
+                          "value": "w"
+                        },
+                        "id": 4269,
+                        "name": "Identifier",
+                        "src": "344:1:27"
+                      }
+                    ],
+                    "id": 4270,
+                    "name": "Return",
+                    "src": "337:8:27"
+                  }
+                ],
+                "id": 4271,
+                "name": "Block",
+                "src": "333:16:27"
+              }
+            ],
+            "id": 4272,
+            "name": "FunctionDefinition",
+            "src": "285:64:27"
+          }
+        ],
+        "id": 4273,
+        "name": "ContractDefinition",
+        "src": "0:352:27"
+      }
+    ],
+    "id": 4274,
+    "name": "SourceUnit",
+    "src": "0:353:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-06-05T15:25:58.670Z"
+}
