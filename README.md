@@ -6,10 +6,29 @@ A practical Ethereum smart contract decompiler
 
 DSol translates the raw EVM bytecode of a smart contract into a high-level language that resembles Solidity.
 
+## Get DSol
+
+`$ git clone https://github.com/tehybel/DSol-decompiler.git`
+
 ## Usage
 
-TODO
+```
+# Navigate to the source directory
+$ cd DSol-decompiler/source/
 
+# Ensure the pysha3 module is installed
+$ sudo pip2 install pysha3
+
+# Run the software with python 2.7
+$ python2 main.py 
+
+# Supply a file containing hex-encoded bytecode or a .json file.
+$ python2 main.py tests/bytecode/foursimple.bc 
+$ python2 main.py tests/build/contracts/Minimal.json
+
+# Run unit tests (optional)
+$ python2 main.py test
+```
 
 ## What is DSol useful for?
 
