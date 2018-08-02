@@ -16,7 +16,6 @@ def main():
 		return
 
 	if ".json" in filename:
-		filename = "./tests/build/contracts/" + filename
 		bytecode, _ = utils.parse_json(filename)
 	else:
 		contents = utils.read_file_contents(filename)

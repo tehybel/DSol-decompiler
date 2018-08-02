@@ -121,7 +121,7 @@ class Optimizer:
 		]
 
 	def apply_opt(self, _opt, f):
-		print("running %s" % _opt)
+		#print("running %s" % _opt)
 		checksum = f.checksum()
 		opt = _opt(self.contract)
 		opt.hook = self.hook
